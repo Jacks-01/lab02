@@ -5,12 +5,14 @@
 <head>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/dynamic.js"></script>
   <title>Bio</title>
 </head>
 
 <body>
   <header>
     <h1>About Me!</h1>
+    <div><script> displayName() </script></div>
   </header>
   <main>
     <p>My name is Jack Stubblefield, I am 21 years old and have just started my journey in software development</p>
@@ -25,6 +27,11 @@
 
     <p>I don't have any specific career goals yet, but I am exploring options in software development. I want more
       experience and new languages under my toolbelt before I make and long-term goals.</p>
+
+    <div id="button1"> 
+      <button onclick="takeQuiz()">Test Your Knowledge!</button>
+
+    </div>
 
   </main>
 
