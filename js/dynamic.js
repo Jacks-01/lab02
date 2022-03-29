@@ -87,6 +87,17 @@ function takeQuiz(){
 
 }
 
+
+
+
+
+
+
+
+
+
+
+
 // let totalCorrect = 0;
 // let totalWrong = 0;
 
