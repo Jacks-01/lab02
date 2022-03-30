@@ -1,10 +1,10 @@
 'use strict';
 
-let firstName = prompt('What is your first name?')
+let firstName = prompt('What is your first name?');
 
 function displayName(){
 
-  document.writeln(`Welcome to my website ${firstName}!`)
+  document.writeln(`Welcome to my website ${firstName}!`);
   console.log(firstName);
 
 }
@@ -18,11 +18,11 @@ function takeQuiz(){
   //then if conditions to check validate user input
   if(question1Lower === 'yes' || question1Lower ==='y'){
     //console.log('correct')
-    alert('Correct!')
+    alert('Correct!');
 
   }else if(question1Lower === 'no' || question1Lower === 'n'){
     //console.log('incorrect')
-    alert('Incorrect!')
+    alert('Incorrect!');
   }
 
   //ask for user input
@@ -33,11 +33,11 @@ function takeQuiz(){
   //then if conditions to check validate user input
   if(question2Lower === 'yes' || question2Lower ==='y'){
     //console.log('correct')
-    alert('Correct!')
+    alert('Correct!');
 
   }else if(question2Lower === 'no' || question2Lower === 'n'){
     //console.log('incorrect')
-    alert('Incorrect!')
+    alert('Incorrect!');
   }
 
   //ask for user input
@@ -48,11 +48,11 @@ function takeQuiz(){
   //then if conditions to check validate user input
   if(question3Lower === 'yes' || question3Lower ==='y'){
     //console.log('correct')
-    alert('Correct!')
+    alert('Correct!');
 
   }else if(question3Lower === 'no' || question3Lower === 'n'){
     //console.log('incorrect')
-    alert('Incorrect!')
+    alert('Incorrect!');
   }
 
   //ask for user input
@@ -63,11 +63,11 @@ function takeQuiz(){
   //then if conditions to check validate user input
   if(question4Lower === 'yes' || question4Lower ==='y'){
     //console.log('correct')
-    alert('Correct!')
+    alert('Correct!');
 
   }else if(question4Lower === 'no' || question4Lower === 'n'){
     //console.log('incorrect')
-    alert('Incorrect!')
+    alert('Incorrect!');
   }
 
   //ask for user input
@@ -78,11 +78,11 @@ function takeQuiz(){
   //then if conditions to check validate user input
   if(question5Lower === 'yes' || question5Lower ==='y'){
     //console.log('correct')
-    alert('Correct!')
+    alert('Correct!');
 
   }else if(question5Lower === 'no' || question5Lower === 'n'){
     //console.log('incorrect')
-    alert('Incorrect!')
+    alert('Incorrect!');
   }
 
 }
@@ -111,7 +111,7 @@ function takeQuiz(){
 //     if( question1 === 'YES'){
 //       alert('Correct!');
 //       totalCorrect += 1;
-      
+
 //     }
 //         else{
 //         alert('Wrong!');
@@ -121,12 +121,12 @@ function takeQuiz(){
 
 // console.log(`you got ${totalCorrect} correct`);
 // console.log(`you got ${totalWrong} wrong`);
-  // let question2 = prompt('How old am I?');
-  // console.log(question2)
-  // if(question2 === '21')
+// let question2 = prompt('How old am I?');
+// console.log(question2)
+// if(question2 === '21')
 
-  // let question3 = prompt('What college did I go to?');
-  // console.log(question3)
+// let question3 = prompt('What college did I go to?');
+// console.log(question3)
 
 
 
