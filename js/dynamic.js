@@ -1,6 +1,7 @@
 'use strict';
 
 let firstName = prompt('What is your first name?');
+let correctAnswers = 0;
 
 function displayName() {
 
@@ -19,6 +20,7 @@ function takeQuiz() {
   if (question1Lower === 'yes' || question1Lower === 'y') {
     //console.log('correct')
     alert('Correct!');
+    correctAnswers++;
 
   } else if (question1Lower === 'no' || question1Lower === 'n') {
     //console.log('incorrect')
@@ -34,7 +36,7 @@ function takeQuiz() {
   if (question2Lower === 'yes' || question2Lower === 'y') {
     //console.log('correct')
     alert('Correct!');
-
+    correctAnswers++;
   } else if (question2Lower === 'no' || question2Lower === 'n') {
     //console.log('incorrect')
     alert('Incorrect!');
@@ -49,6 +51,7 @@ function takeQuiz() {
   if (question3Lower === 'yes' || question3Lower === 'y') {
     //console.log('correct')
     alert('Correct!');
+    correctAnswers++;
 
   } else if (question3Lower === 'no' || question3Lower === 'n') {
     //console.log('incorrect')
@@ -64,6 +67,7 @@ function takeQuiz() {
   if (question4Lower === 'yes' || question4Lower === 'y') {
     //console.log('correct')
     alert('Correct!');
+    correctAnswers++;
 
   } else if (question4Lower === 'no' || question4Lower === 'n') {
     //console.log('incorrect')
@@ -79,15 +83,12 @@ function takeQuiz() {
   if (question5Lower === 'yes' || question5Lower === 'y') {
     //console.log('correct')
     alert('Correct!');
+    correctAnswers++;
 
   } else if (question5Lower === 'no' || question5Lower === 'n') {
     //console.log('incorrect')
     alert('Incorrect!');
   }
-
-
-
-
   
   let attempts = 0;
   let needed = true;
@@ -108,6 +109,7 @@ function takeQuiz() {
     else if(question6 === 21){
       alert('Ding Ding Ding!');
       needed = false;
+      correctAnswers++;
     }
     else {
       //if they enter cat :^)
@@ -119,9 +121,27 @@ function takeQuiz() {
     alert('You are out of attempts! The correct answer is 21');
   }
 
-  answerKey = ['&&','||', '!'];
-  question7 = prompt('Name a valid logical operator in JavaScript');
-  
+  let attempts1 = 6;
+  let needed1 = true;
+  let answerKey = ['&&','||', '!'];
+  let question7;
+
+  while(needed1 || attempts1 === 0){
+    question7 = prompt('Name a valid logical operator in JavaScript');
+    if(answerKey.indexOf(question7)>= 0){
+      alert('Good Job!');
+      needed1 = false;
+    }
+    else{
+      attempts1 -= 1;
+      console.log(attempts1);
+      //alert(`Try again! you have ${attempts1} remaining`);
+    }
+  }
+
+  if(needed1 || attempts1 === 0){
+    alert(`Sorry! You are out of attempts! Possible answers include: ${answerKey}`);
+  }
 
 }
 
