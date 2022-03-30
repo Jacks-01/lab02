@@ -2,25 +2,25 @@
 
 let firstName = prompt('What is your first name?');
 
-function displayName(){
+function displayName() {
 
   document.writeln(`Welcome to my website ${firstName}!`);
   console.log(firstName);
 
 }
 
-function takeQuiz(){
+function takeQuiz() {
   //ask for user input
   let question1 = prompt('Did I go to Linn-Mar High School?');
   //get input then to lower case it
 
   let question1Lower = question1.toLowerCase();
   //then if conditions to check validate user input
-  if(question1Lower === 'yes' || question1Lower ==='y'){
+  if (question1Lower === 'yes' || question1Lower === 'y') {
     //console.log('correct')
     alert('Correct!');
 
-  }else if(question1Lower === 'no' || question1Lower === 'n'){
+  } else if (question1Lower === 'no' || question1Lower === 'n') {
     //console.log('incorrect')
     alert('Incorrect!');
   }
@@ -31,11 +31,11 @@ function takeQuiz(){
 
   let question2Lower = question2.toLowerCase();
   //then if conditions to check validate user input
-  if(question2Lower === 'yes' || question2Lower ==='y'){
+  if (question2Lower === 'yes' || question2Lower === 'y') {
     //console.log('correct')
     alert('Correct!');
 
-  }else if(question2Lower === 'no' || question2Lower === 'n'){
+  } else if (question2Lower === 'no' || question2Lower === 'n') {
     //console.log('incorrect')
     alert('Incorrect!');
   }
@@ -46,11 +46,11 @@ function takeQuiz(){
 
   let question3Lower = question3.toLowerCase();
   //then if conditions to check validate user input
-  if(question3Lower === 'yes' || question3Lower ==='y'){
+  if (question3Lower === 'yes' || question3Lower === 'y') {
     //console.log('correct')
     alert('Correct!');
 
-  }else if(question3Lower === 'no' || question3Lower === 'n'){
+  } else if (question3Lower === 'no' || question3Lower === 'n') {
     //console.log('incorrect')
     alert('Incorrect!');
   }
@@ -61,11 +61,11 @@ function takeQuiz(){
 
   let question4Lower = question4.toLowerCase();
   //then if conditions to check validate user input
-  if(question4Lower === 'yes' || question4Lower ==='y'){
+  if (question4Lower === 'yes' || question4Lower === 'y') {
     //console.log('correct')
     alert('Correct!');
 
-  }else if(question4Lower === 'no' || question4Lower === 'n'){
+  } else if (question4Lower === 'no' || question4Lower === 'n') {
     //console.log('incorrect')
     alert('Incorrect!');
   }
@@ -76,16 +76,58 @@ function takeQuiz(){
 
   let question5Lower = question5.toLowerCase();
   //then if conditions to check validate user input
-  if(question5Lower === 'yes' || question5Lower ==='y'){
+  if (question5Lower === 'yes' || question5Lower === 'y') {
     //console.log('correct')
     alert('Correct!');
 
-  }else if(question5Lower === 'no' || question5Lower === 'n'){
+  } else if (question5Lower === 'no' || question5Lower === 'n') {
     //console.log('incorrect')
     alert('Incorrect!');
   }
 
+
+
+
+  
+  let attempts = 0;
+  let needed = true;
+  let question6;
+  // While both of these conditions are true, loop up to 4 times, if user exceeds 4 tries then the loop will end and tell them the answer.
+  while (needed && attempts <= 4) {
+    // prompts the user for an input, then converts the string to a number
+    question6 = Number(prompt('How old am I?'));
+    if (question6 < 21) {
+      alert('too low! Try guessing a higher number');
+      attempts++;
+    }
+    else if (question6 > 21) {
+      alert('too high! Try guessing a lower number');
+      attempts++;
+    }
+
+    else if(question6 === 21){
+      alert('Ding Ding Ding!');
+      needed = false;
+    }
+    else {
+      //if they enter cat :^)
+      alert('Enter a number please :)!');
+    }
+  }
+  //If the user exceeds 4 tries
+  if(needed && attempts >= 4){
+    alert('You are out of attempts! The correct answer is 21');
+  }
+
+  answerKey = ['&&','||', '!'];
+  question7 = prompt('Name a valid logical operator in JavaScript');
+  
+
 }
+
+
+
+
 
 
 
