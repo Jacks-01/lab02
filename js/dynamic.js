@@ -154,49 +154,40 @@ function takeQuiz() {
 } //function closes.
 
 
-
-
-
-
-
-
-
-
 //Stretch Goals
 
-// function askQuestions() {
-//   let questions = [['How old am I?', '507'], ['What color is the sky', 'your a color'], ['whats not a pet.', 'snakes']];
+function askQuestions() {
+  let questions = [['How old am I?', '507'], ['What color is the sky', 'your a color'], ['whats not a pet.', 'snakes']];
 
-//   for(let i = 0; i < questions.length; i++){
-//     let answer = askUser(questions[i][0], questions[i][1]);
+  for(let i = 0; i < questions.length; i++){
+    let answer = askUser(questions[i][0], questions[i][1]);
 
-//     if(answer){
-//       correctAnswers++;
-//       //call function
-//       alert('Yea you were right.');
-//     } else {
-//       //call function
-//       alert('You were incorrect.');
-//     }
-//   }
+    if(answer){
+      correctAnswers++;
+      //call function
+      alert('Yea you were right.');
+    } else {
+      //call function
+      alert('You were incorrect.');
+    }
+  }
 
+}
 
-// }
-
-// /**
-//  * prompts user with question and compares answer with supplied question.
-//  * @param {string} question text displayed to user in prompt
-//  * @param {string} answer is the value of the questions answer.
-//  * @returns true if answers match and not if its false.
-//  */
-// function askUser(question, answer){
-//   let userResponse = prompt(question);
-//   return answer === userResponse;
-// }
-
+/**
+ * prompts user with question and compares answer with supplied question.
+ * @param {string} question text displayed to user in prompt
+ * @param {string} answer is the value of the questions answer.
+ * @returns true if answers match and not if its false.
+ */
+function askUser(question, answer){
+  let userResponse = prompt(question);
+  return answer === userResponse;
+}
 
 
-// askQuestions();
+
+askQuestions();
 
 
 
