@@ -1,6 +1,7 @@
 'use strict';
 
 let firstName = prompt('What is your first name?');
+// eslint-disable-next-line no-unused-vars
 let correctAnswers = 0;
 
 // eslint-disable-next-line no-unused-vars
@@ -11,9 +12,7 @@ function displayName() {
 
 }
 
-// eslint-disable-next-line no-unused-vars
-function takeQuiz() {
-
+function questionOne(){
   //ask for user input
   let question1 = prompt('Did I go to Linn-Mar High School?');
   //get input then to lower case it
@@ -29,7 +28,9 @@ function takeQuiz() {
     //console.log('incorrect')
     alert('Incorrect!');
   }
+}
 
+function questionTwo(){
   //ask for user input
   let question2 = prompt('Am I 21 years old?');
   //get input then to lower case it
@@ -44,7 +45,9 @@ function takeQuiz() {
     //console.log('incorrect')
     alert('Incorrect!');
   }
+}
 
+function questionThree(){
   //ask for user input
   let question3 = prompt('Did I go to Kirkwood Community College?');
   //get input then to lower case it
@@ -60,7 +63,9 @@ function takeQuiz() {
     //console.log('incorrect')
     alert('Incorrect!');
   }
+}
 
+function questionFour(){
   //ask for user input
   let question4 = prompt('Did I major in social work?');
   //get input then to lower case it
@@ -76,7 +81,9 @@ function takeQuiz() {
     //console.log('incorrect')
     alert('Incorrect!');
   }
+}
 
+function questionFive(){
   //ask for user input
   let question5 = prompt('Am I a software developer?');
   //get input then to lower case it
@@ -92,11 +99,9 @@ function takeQuiz() {
     //console.log('incorrect')
     alert('Incorrect!');
   }
+}
 
-
-
-
-
+function questionSix(){
   let attempts = 0;
   let needed = true;
   let question6;
@@ -127,7 +132,11 @@ function takeQuiz() {
   if (needed && attempts >= 4) {
     alert('You are out of attempts! The correct answer is 21');
   }
+}
 
+// eslint-disable-next-line no-unused-vars
+function questionSeven()
+{
   let attempts1 = 6;
   let needed1 = true;
   let answerKey = ['&&', '||', '!'];
@@ -150,7 +159,6 @@ function takeQuiz() {
       }
     }
   }
-
 } //function closes.
 
 
@@ -188,9 +196,3 @@ function askUser(question, answer){
 
 
 askQuestions();
-
-
-
-
-
-
