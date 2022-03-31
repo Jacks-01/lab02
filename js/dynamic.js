@@ -161,11 +161,21 @@ function questionSeven()
   }
 } //function closes.
 
+function takeQuiz(){
+  questionOne();
+  questionTwo();
+  questionThree();
+  questionFour();
+  questionFive();
+  questionSix();
+  questionSeven();
+  questionEight();
+}
 
 //Stretch Goals
 
-function askQuestions() {
-  let questions = [['How old am I?', '507'], ['What color is the sky', 'your a color'], ['whats not a pet.', 'snakes']];
+function questionEight() {
+  let questions = [['How old am I?', '507'], ['What color is the sky', 'you are a color'], ['whats not a pet.', 'snakes']];
 
   for(let i = 0; i < questions.length; i++){
     let answer = askUser(questions[i][0], questions[i][1]);
@@ -192,7 +202,3 @@ function askUser(question, answer){
   let userResponse = prompt(question);
   return answer === userResponse;
 }
-
-
-
-askQuestions();
