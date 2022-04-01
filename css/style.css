@@ -22,6 +22,11 @@ header {
 
 section.content{
   margin: 50px 100px auto;
-  
 
 }
+
+p{
+
+  padding: 10px;
+}
+
