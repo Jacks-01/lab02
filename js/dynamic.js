@@ -161,6 +161,7 @@ function questionSeven()
   }
 } //function closes.
 
+// eslint-disable-next-line no-unused-vars
 function takeQuiz(){
   questionOne();
   questionTwo();

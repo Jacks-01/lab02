@@ -1,15 +1,27 @@
 *{
-  outline:dashed 2px rgb(26, 165, 45);
+  /* background-color: #919DE7; */
+  /* background-image: url(pexels-lumn-167699.jpg); */
+  /* outline:dashed 2px rgb(26, 165, 45); */
 }
 
 body{
   margin: 0 auto;
   width: 1000px;
   display: block;
-
+  background-image: url("pexels-lumn-167699.jpg");
+  /* background-position: center; */
+  background-size: cover;
 }
 
-h1{
+header {
+  background-color: #FFCC92;
+  width: 500px;
+  padding: 25px;
+  margin: 0 200px auto;
+}
 
+section.content{
+  margin: 50px 100px auto;
+  
 
 }
